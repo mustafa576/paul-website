@@ -153,22 +153,85 @@ body {
 
 
 .contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.contact1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact1 h4 {
+    margin-top: 10px;
+}
+.map {
+    width: 70%;
+    height: 50vh;
+    background-color: #ccc;
+}
+
+.contact2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.links {
+    display: flex;
     height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.links h1 {
+    font-weight: 700;
+}
+.uls {
+    display: flex;
+    padding: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+}
+.uls ul {
     text-align: center;
 }
-.map {
-    width: 50%;
-    height: 50vh;
-    background-color: #ccc;
+.uls li {
+    list-style: none;
+    padding: 5px;
 }
-.carousel-item img {
-    width: 100%;
-    height: 100vh;
+.uls ul li a {
+    text-decoration: none;
+    color: #212121;
+} 
+.head {
+    font-size: 25px;
+    font-weight: 800;
+}
+ul li a img {
+    width: 150px;
+    height: 40px;
 }
 
 
@@ -180,6 +243,12 @@ body {
         grid-template-columns: 100%;
     }
     .services {
+        grid-template-columns: 50% 50%;
+    }
+    .contact {
+        grid-template-columns: 100%;
+    }
+    .uls {
         grid-template-columns: 50% 50%;
     }
 }
